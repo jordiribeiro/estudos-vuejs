@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<div id="app">
+    <input type="text" v-on:input="alteraTitulo">
+    <p>
+        {{ titulo }}
+    </p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Usando view js!!'
+        },
+        methods: {
+            alteraTitulo(event) {
+                this.titulo = event.target.value
+            }
+        }
+    })
+</script>
+div.estilo-1#codigo
